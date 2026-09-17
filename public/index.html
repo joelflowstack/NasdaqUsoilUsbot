@@ -4,7 +4,6 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>NASDAQ | GOLD | FX Signals</title>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
 <style>
   :root {
     --bg: #0b0f14;
@@ -125,26 +124,18 @@
       <span class="ticker">AUDCAD</span>
     </div>
 
-    <a href="https://t.me/NasdaqUsoilUs100GoldUs500Us30FX" id="joinBtn" class="cta">📊 Redirecting to channel…</a>
+    <a href="#" id="joinBtn" class="cta">📊 Join Channel Now</a>
     <p class="foot">Free access · Telegram</p>
   </div>
 
   <script>
+    // Set once here — change if the channel link ever moves.
     var CHANNEL_LINK = "https://t.me/NasdaqUsoilUs100GoldUs500Us30FX";
 
-    var tg = window.Telegram && window.Telegram.WebApp;
-
-    if (tg) {
-      // Running inside Telegram's Mini App WebView — use Telegram's own
-      // navigation bridge, which is reliable here (plain JS redirects are not).
-      tg.ready();
-      tg.openTelegramLink(CHANNEL_LINK);
-      // Close the Mini App shortly after so the user lands cleanly in the channel.
-      setTimeout(function () { tg.close(); }, 300);
-    } else {
-      // Opened in a regular browser (not inside Telegram) — plain redirect works fine here.
-      window.location.replace(CHANNEL_LINK);
-    }
+    document.getElementById('joinBtn').addEventListener('click', function (e) {
+      e.preventDefault();
+      window.location.href = CHANNEL_LINK;
+    });
   </script>
 
 </body>
