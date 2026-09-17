@@ -1,0 +1,11 @@
+# Copy these into Vercel → Project → Settings → Environment Variables
+# Do NOT commit a real .env file with actual values to GitHub.
+
+# Token from @BotFather when you created the bot
+BOT_TOKEN=
+
+# The channel your ads should refer users to
+CHANNEL_LINK=https://t.me/NasdaqUsoilUs100GoldUs500Us30FX
+
+# Any random string you make up — protects your webhook from fake requests
+WEBHOOK_SECRET=
