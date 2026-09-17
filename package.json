@@ -1,0 +1,12 @@
+{
+  "name": "nasdaq-fx-signals-bot",
+  "version": "1.0.0",
+  "description": "Telegram ad-referral bot for the NASDAQ/GOLD/FX signals channel",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}
